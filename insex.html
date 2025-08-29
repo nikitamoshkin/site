@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Letters</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: black;
+      color: #00ff00;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 6rem;
+      display: flex;
+      gap: 10px;
+      text-transform: uppercase;
+    }
+
+    span {
+      opacity: 0.1;
+      animation: blink 1.2s infinite;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+
+    span:nth-child(1) { animation-delay: 0s; }
+    span:nth-child(2) { animation-delay: 0.2s; }
+    span:nth-child(3) { animation-delay: 0.4s; }
+    span:nth-child(4) { animation-delay: 0.6s; }
+    span:nth-child(5) { animation-delay: 0.8s; }
+    span:nth-child(6) { animation-delay: 1s; }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0.1; text-shadow: none; }
+      50% { opacity: 1; text-shadow: 0 0 10px #00ff00; }
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <span>N</span>
+    <span>I</span>
+    <span>K</span>
+    <span>I</span>
+    <span>T</span>
+    <span>A</span>
+  </h1>
+</body>
+</html>
